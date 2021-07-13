@@ -1,0 +1,22 @@
+.page-content {
+    min-height: 70vh;
+}
+
+.box {
+    margin: 5em 10em 5em 10em;
+    min-width: 20em;
+}
+
+.submit-form {
+    width: 100%;
+}
+
+.error-message-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.error-message {
+    color: red
+}
