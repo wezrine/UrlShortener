@@ -53,14 +53,17 @@ function HomePage() {
             <div className="field">
                 <label className="label">Enter a long URL</label>
                 <div className="control">
-                    <input id="urlInputTextBox" className="input" name="urlInput" onChange={handleOnChange}/>
+                    <input id="urlInputTextBox" className="input url-input" name="urlInput" onChange={handleOnChange}/>
                 </div>
             </div>
 
             <div className="field">
                 <label className="label">Shortend URL</label>
                 <div className="control">
-                    <div id="urlOutputTextBox" className="input">{url.output.length > 0 ? url.output : ""}</div>
+                    <div id="urlOutputTextBox" className="input url-output">
+                        <a className='output-link' href={url.output.length > 0 ? url.output : ""}>
+                        {url.output.length > 0 ? url.output : ""}</a>
+                    </div>
                 </div>
             </div>
             {errorMessage ? <div className='error-message-container'><h1 className='error-message'>{errorMessage}</h1></div> : ""}
