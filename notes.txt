@@ -1,0 +1,29 @@
+Welcome to William Ezrine's URL Shortener Exercise for STORD.
+
+////////////////////////
+
+How to run:
+
+1). Open a terminal, clone the repository and cd into it using:
+	
+	cd ~/Desktop
+	git clone https://github.com/wezrine/UrlShortener.git
+	cd UrlShortener
+
+2). Create three separate tabs in Terminal (all at ./UrlShortener) run:
+	
+	1st). make setup
+	2nd). make server
+	3rd). make test
+
+	# Keep in mind, 'make test' may take a few minutes to run and deliver results in terminal
+
+3). Enjoy the app! The Makefile will have started the app, server, and run the tests. 
+
+////////////////////////
+
+Notes about my approach:
+
+- Slug Generation
+
+To generate the slug used for identifying the input url, I used the built in Math.random() function to randomly select characters from a provided list. While this method does not ensure each slug is unique, the odds of two slugs being the same was low enough for me to feel this was a viable approach for this excercise.
