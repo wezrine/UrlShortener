@@ -1,6 +1,4 @@
-.PHONY: all
-
-all: setup server test
+.PHONY: $(MAKECMDGOALS)
 
 setup:
 	cd ./client && npm i && npm start	
